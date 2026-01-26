@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import {
     Carousel,
@@ -94,7 +94,7 @@ const GallerySection = () => {
                         className="w-full"
                     >
                         <CarouselContent className="-ml-4">
-                            {galleryImages.map((image, index) => (
+                            {galleryImages.map((image) => (
                                 <CarouselItem
                                     key={image.id}
                                     className="pl-4 basis-full md:basis-1/2 lg:basis-1/3"
