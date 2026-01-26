@@ -14,24 +14,28 @@ import img1 from "../assets/gallery/1.jpeg";
 import img2 from "../assets/gallery/11.jpeg";
 import img3 from "../assets/gallery/12.jpeg";
 import img4 from "../assets/gallery/15.jpeg";
-// import img5 from "../assets/gallery/5.jpg";
-// import img6 from "../assets/gallery/6.jpg";
+import img5 from "../assets/gallery/16.jpeg";
+import img6 from "../assets/gallery/17.jpeg";
 import img7 from "../assets/gallery/7.jpeg";
-// import img8 from "../assets/gallery/8.jpg";
-// import img9 from "../assets/gallery/9.jpg";
+import img8 from "../assets/gallery/18.jpeg";
+import img9 from "../assets/gallery/19.jpeg";
 import img10 from "../assets/gallery/10.jpg";
+import img20 from "../assets/gallery/20.jpeg";
+import img21 from "../assets/gallery/22.jpeg";
 
 const galleryImages = [
     { id: 1, src: img1, alt: "Memory 1" },
     // { id: 2, src: img2, alt: "Memory 2" },
-    // { id: 3, src: img3, alt: "Memory 3" },
-    // { id: 4, src: img4, alt: "Memory 4" },
-    // { id: 5, src: img5, alt: "Memory 5" },
-    // { id: 6, src: img6, alt: "Memory 6" },
+    { id: 3, src: img9, alt: "Memory 3" },
+    { id: 4, src: img8, alt: "Memory 4" },
+    { id: 5, src: img6, alt: "Memory 5" },
+    { id: 6, src: img5, alt: "Memory 6" },
     { id: 7, src: img7, alt: "Memory 7" },
     { id: 8, src: img3, alt: "Memory 8" },
     { id: 9, src: img2, alt: "Memory 9" },
-     { id: 4, src: img4, alt: "Memory 4" },
+    { id: 9, src: img20, alt: "Memory 20" },
+    { id: 9, src: img21, alt: "Memory 9" },
+    { id: 4, src: img4, alt: "Memory 4" },
     { id: 10, src: img10, alt: "Memory 10" },
 ];
 
@@ -121,8 +125,8 @@ const GallerySection = () => {
                                 key={index}
                                 onClick={() => api?.scrollTo(index)}
                                 className={`w-2 h-2 rounded-full transition-all duration-300 ${current === index
-                                        ? "bg-gold w-6"
-                                        : "bg-charcoal/30 hover:bg-charcoal/50"
+                                    ? "bg-gold w-6"
+                                    : "bg-charcoal/30 hover:bg-charcoal/50"
                                     }`}
                                 aria-label={`Go to slide ${index + 1}`}
                             />
