@@ -16,7 +16,7 @@ const BrochureBanner = () => {
       className="relative overflow-hidden"
     >
        <a
-        href="/brochures/brochure-main.pdf"
+        // href="/brochures/brochure-main.pdf"
         download
         target="_blank"
         rel="noopener noreferrer"
