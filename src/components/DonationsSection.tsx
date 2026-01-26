@@ -28,7 +28,7 @@ const CopyButton = ({ text }: { text: string }) => {
 
 const DonationsSection = () => {
   return (
-    <section id="donations" className="py-20 md:py-28 bg-cream-dark">
+    <section id="donations" className="py-8 bg-cream-dark">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -49,9 +49,9 @@ const DonationsSection = () => {
           <div className="divider-gold mt-8" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-1 gap-6 max-w-4xl mx-auto">
           {/* Bank Account Card */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -98,7 +98,7 @@ const DonationsSection = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* USSD Code Card */}
           <motion.div
@@ -132,7 +132,27 @@ const DonationsSection = () => {
                 <p className="font-sans text-sm text-charcoal-light mb-1">Mobile Number</p>
                 <div className="flex items-center justify-between bg-cream rounded-lg px-4 py-3">
                   <span className="font-mono text-lg font-semibold text-charcoal tracking-wider">
-                    0201234567
+                    0546465820
+                  </span>
+                  <CopyButton text="0201234567" />
+                </div>
+              </div>
+
+               <div>
+                <p className="font-sans text-sm text-charcoal-light mb-1">Name</p>
+                <div className="flex items-center justify-between bg-cream rounded-lg px-4 py-3">
+                  <span className="font-mono text-lg font-semibold text-charcoal tracking-wider">
+                  David Tawiah Glover
+                  </span>
+                  {/* <CopyButton text="0201234567" /> */}
+                </div>
+              </div>
+
+                <div>
+                <p className="font-sans text-sm text-charcoal-light mb-1">Reference</p>
+                <div className="flex items-center justify-between bg-cream rounded-lg px-4 py-3">
+                  <span className="font-mono text-lg font-semibold text-charcoal tracking-wider">
+                  ENGL
                   </span>
                   <CopyButton text="0201234567" />
                 </div>
