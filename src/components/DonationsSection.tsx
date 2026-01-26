@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Building2, Smartphone, Copy, Check } from "lucide-react";
+import { Smartphone, Copy, Check } from "lucide-react";
 import { useState } from "react";
 
 const CopyButton = ({ text }: { text: string }) => {
