@@ -113,12 +113,12 @@ const DonationsSection = () => {
                 <Smartphone className="w-6 h-6 text-gold" />
               </div>
               <h3 className="font-serif text-xl text-charcoal font-semibold">
-                Mobile Money / USSD
+                Mobile Money
               </h3>
             </div>
 
             <div className="space-y-4">
-              <div>
+              {/* <div>
                 <p className="font-sans text-sm text-charcoal-light mb-1">USSD Code</p>
                 <div className="flex items-center justify-between bg-cream rounded-lg px-4 py-3">
                   <span className="font-mono text-xl font-bold text-charcoal tracking-wide">
@@ -126,13 +126,23 @@ const DonationsSection = () => {
                   </span>
                   <CopyButton text="*170*1*XXXXXX#" />
                 </div>
-              </div>
+              </div> */}
 
               <div>
-                <p className="font-sans text-sm text-charcoal-light mb-1">Mobile Number</p>
+                <p className="font-sans text-sm text-charcoal-light mb-1">MTN Momo</p>
                 <div className="flex items-center justify-between bg-cream rounded-lg px-4 py-3">
                   <span className="font-mono text-lg font-semibold text-charcoal tracking-wider">
                     0546465820
+                  </span>
+                  <CopyButton text="0201234567" />
+                </div>
+              </div>
+
+               <div>
+                <p className="font-sans text-sm text-charcoal-light mb-1">Telecel Cash</p>
+                <div className="flex items-center justify-between bg-cream rounded-lg px-4 py-3">
+                  <span className="font-mono text-lg font-semibold text-charcoal tracking-wider">
+                    0208370272
                   </span>
                   <CopyButton text="0201234567" />
                 </div>
@@ -158,11 +168,11 @@ const DonationsSection = () => {
                 </div>
               </div>
 
-              <div className="pt-4">
+              {/* <div className="pt-4">
                 <p className="font-sans text-sm text-charcoal-light text-center">
                   Dial the USSD code from your mobile phone to make a donation directly via Mobile Money.
                 </p>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>
