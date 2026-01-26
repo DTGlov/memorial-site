@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { FileDown, ExternalLink } from "lucide-react";
 
 const BrochureBanner = () => {
-  // const handleDownload = () => {
-  //   // Placeholder: In production, this would trigger a PDF download
-  //   alert("Memorial brochure download would start here.");
-  // };
+  const handleDownload = () => {
+    // Placeholder: In production, this would trigger a PDF download
+    alert("Brochure will be available for download during the service on Saturday");
+  };
 
   return (
     <motion.section
@@ -15,12 +15,16 @@ const BrochureBanner = () => {
       transition={{ duration: 0.6 }}
       className="relative overflow-hidden"
     >
-       <a
+       {/* <a
         // href="/brochures/brochure-main.pdf"
         download
         target="_blank"
         rel="noopener noreferrer"
         className="block w-full py-8 md:py-10 gradient-gold text-charcoal transition-all duration-300 hover:brightness-110 group"
+      > */}
+        <button
+        onClick={handleDownload}
+        className="w-full py-8 md:py-10 gradient-gold text-charcoal transition-all duration-300 hover:brightness-110 group cursor-pointer"
       >
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-center gap-4 md:gap-6">
@@ -44,7 +48,8 @@ const BrochureBanner = () => {
             <ExternalLink className="w-5 h-5 md:w-6 md:h-6 opacity-60 group-hover:opacity-100 transition-opacity ml-2" />
           </div>
         </div>
-      </a>
+      {/* </a> */}
+      </button>
     </motion.section>
   );
 };
