@@ -22,10 +22,10 @@ import img9 from "../assets/gallery/19.jpeg";
 import img10 from "../assets/gallery/10.jpg";
 import img20 from "../assets/gallery/20.jpeg";
 import img21 from "../assets/gallery/22.jpeg";
+import img23 from "../assets/gallery/23.jpeg";
 
 const galleryImages = [
     { id: 1, src: img1, alt: "Memory 1" },
-    // { id: 2, src: img2, alt: "Memory 2" },
     { id: 3, src: img9, alt: "Memory 3" },
     { id: 4, src: img8, alt: "Memory 4" },
     { id: 5, src: img6, alt: "Memory 5" },
@@ -33,8 +33,9 @@ const galleryImages = [
     { id: 7, src: img7, alt: "Memory 7" },
     { id: 8, src: img3, alt: "Memory 8" },
     { id: 9, src: img2, alt: "Memory 9" },
-    { id: 9, src: img20, alt: "Memory 20" },
-    { id: 9, src: img21, alt: "Memory 9" },
+    { id: 23, src: img23, alt: "Memory 23" },
+    { id: 91, src: img20, alt: "Memory 20" },
+    { id: 19, src: img21, alt: "Memory 9" },
     { id: 4, src: img4, alt: "Memory 4" },
     { id: 10, src: img10, alt: "Memory 10" },
 ];
