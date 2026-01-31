@@ -15,17 +15,17 @@ const BrochureBanner = () => {
       transition={{ duration: 0.6 }}
       className="relative overflow-hidden"
     >
-       {/* <a
-        // href="/brochures/brochure-main.pdf"
+       <a
+        href="/brochures/brochure-main.pdf"
         download
         target="_blank"
         rel="noopener noreferrer"
         className="block w-full py-8 md:py-10 gradient-gold text-charcoal transition-all duration-300 hover:brightness-110 group"
-      > */}
-        <button
+      >
+        {/* <button
         onClick={handleDownload}
         className="w-full py-8 md:py-10 gradient-gold text-charcoal transition-all duration-300 hover:brightness-110 group cursor-pointer"
-      >
+      > */}
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-center gap-4 md:gap-6">
             <motion.div
@@ -48,8 +48,8 @@ const BrochureBanner = () => {
             <ExternalLink className="w-5 h-5 md:w-6 md:h-6 opacity-60 group-hover:opacity-100 transition-opacity ml-2" />
           </div>
         </div>
-      {/* </a> */}
-      </button>
+      </a>
+      {/* </button> */}
     </motion.section>
   );
 };
