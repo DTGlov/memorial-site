@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { FileDown, ExternalLink } from "lucide-react";
 
 const BrochureBanner = () => {
-  const handleDownload = () => {
-    // Placeholder: In production, this would trigger a PDF download
-    alert("Brochure will be available for download during the service on Saturday");
-  };
+  // const handleDownload = () => {
+  //   // Placeholder: In production, this would trigger a PDF download
+  //   alert("Brochure will be available for download during the service on Saturday");
+  // };
 
   return (
     <motion.section
