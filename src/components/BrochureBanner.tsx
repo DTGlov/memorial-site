@@ -2,10 +2,6 @@ import { motion } from "framer-motion";
 import { FileDown, ExternalLink } from "lucide-react";
 
 const BrochureBanner = () => {
-  // const handleDownload = () => {
-  //   // Placeholder: In production, this would trigger a PDF download
-  //   alert("Brochure will be available for download during the service on Saturday");
-  // };
 
   return (
     <motion.section
@@ -22,10 +18,6 @@ const BrochureBanner = () => {
         rel="noopener noreferrer"
         className="block w-full py-8 md:py-10 gradient-gold text-charcoal transition-all duration-300 hover:brightness-110 group"
       >
-        {/* <button
-        onClick={handleDownload}
-        className="w-full py-8 md:py-10 gradient-gold text-charcoal transition-all duration-300 hover:brightness-110 group cursor-pointer"
-      > */}
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-center gap-4 md:gap-6">
             <motion.div
@@ -49,7 +41,6 @@ const BrochureBanner = () => {
           </div>
         </div>
       </a>
-      {/* </button> */}
     </motion.section>
   );
 };
